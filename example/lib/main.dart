@@ -20,12 +20,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const ScreenUtilInit(
-      designSize: Size(390, 812),
-      minTextAdapt: true,
-      child: MaterialApp(
-        home: BelugaDesignHome(),
-      ),
+    return const MaterialApp(
+      home: BelugaDesignHome(),
     );
   }
 }

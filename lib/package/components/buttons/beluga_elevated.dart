@@ -1,4 +1,6 @@
 import 'package:beluga_design_flutter/beluga_design.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 // class BelugaElevated extends StatelessWidget {
 //   final String text;
