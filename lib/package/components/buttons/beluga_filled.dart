@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomMainFillButton extends StatelessWidget {
+class BelugaFilled extends StatelessWidget {
   final String text;
   final VoidCallback? onPressed;
   final Color backgroundColor;
@@ -29,7 +29,7 @@ class CustomMainFillButton extends StatelessWidget {
   final double outerShadowBlurRadius;
   final double outerShadowSpreadRadius;
 
-  const CustomMainFillButton({
+  const BelugaFilled({
     super.key,
     this.text = "Button",
     this.onPressed,

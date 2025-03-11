@@ -9,7 +9,7 @@ class Buttons extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomMainFillButton(
+            BelugaFilled(
               onPressed: () {},
               width: 120,
               height: 36,
@@ -23,7 +23,7 @@ class Buttons extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            CustomMainFillButton(
+            BelugaFilled(
               onPressed: () {},
               width: 120,
               height: 36,
@@ -37,7 +37,7 @@ class Buttons extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            CustomMainFillButton(
+            BelugaFilled(
               onPressed: () {},
               width: 120,
               height: 36,
@@ -54,7 +54,7 @@ class Buttons extends StatelessWidget {
             const SizedBox(
               height: 25,
             ),
-            CustomMainFillButton(
+            BelugaFilled(
               onPressed: () {},
               width: 120,
               height: 36,
