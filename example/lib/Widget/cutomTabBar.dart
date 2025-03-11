@@ -25,7 +25,7 @@ class CustomTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      animationDuration: const Duration(milliseconds: 500),
+      // animationDuration: const Duration(milliseconds: 500),
       length: tabs.length,
       child: Scaffold(
         body: Column(
@@ -42,6 +42,7 @@ class CustomTabBar extends StatelessWidget {
                   controller: tabController,
                   dividerColor: Colors.transparent,
                   tabs: tabs,
+                  splashBorderRadius: BorderRadius.circular(100),
 
                   indicatorSize: TabBarIndicatorSize.tab,
                   // indicatorColor: indicatorColor,
@@ -51,6 +52,7 @@ class CustomTabBar extends StatelessWidget {
                   ),
                   labelColor: labelColor,
                   // labelStyle: TextStyle(),
+
                   unselectedLabelColor: unselectedLabelColor,
                 ),
               ),

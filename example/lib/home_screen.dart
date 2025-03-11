@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen>
       body: Padding(
         padding: const EdgeInsets.only(top: 50),
         child: CustomTabBar(
-          height: 36,
+          //  height: 36,
           tabs: [
             Tab(
               child: TabUtil.myTab(

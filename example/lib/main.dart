@@ -1,5 +1,6 @@
 import 'package:beluga_design_flutter/beluga_design.dart';
 import 'package:example/checkboxes.dart';
+import 'package:example/home_screen.dart';
 import 'package:example/inputs.dart';
 import 'package:example/radio_buttons.dart';
 import 'package:flutter/cupertino.dart';
@@ -23,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       designSize: Size(390, 812),
       minTextAdapt: true,
       child: MaterialApp(
-        home: BelugaDesignHome(),
+        home:HomeScreen(),
       ),
     );
   }
