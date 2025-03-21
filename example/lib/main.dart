@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       designSize: Size(390, 812),
       minTextAdapt: true,
       child: MaterialApp(
-        home:HomeScreen(),
+        home:BelugaDesignHome(),
       ),
     );
   }

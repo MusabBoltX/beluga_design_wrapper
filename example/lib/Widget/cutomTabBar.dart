@@ -8,11 +8,13 @@ class CustomTabBar extends StatelessWidget {
   final Color labelColor;
   final Color unselectedLabelColor;
   final TabController tabController;
+  // final Function(int)? onTap;
   final double height;
 
   const CustomTabBar({
     super.key,
     this.height = 36,
+    // this.onTap,
     required this.tabController,
     required this.tabs,
     required this.tabViews,
@@ -39,6 +41,7 @@ class CustomTabBar extends StatelessWidget {
                   borderRadius: BorderRadius.circular(100),
                 ),
                 child: TabBar(
+                  // onTap: onTap,
                   controller: tabController,
                   dividerColor: Colors.transparent,
                   tabs: tabs,
@@ -59,6 +62,7 @@ class CustomTabBar extends StatelessWidget {
             ),
             Expanded(
               child: TabBarView(
+                
                 controller: tabController,
                 children: tabViews,
               ),
