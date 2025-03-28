@@ -1,5 +1,7 @@
 import 'package:beluga_design_flutter/beluga_design.dart';
+import 'package:beluga_design_flutter/package/components/inputs/beluga_drop_down.dart';
 import 'package:example/checkboxes.dart';
+import 'package:country_code_picker/country_code_picker.dart';
 
 class InputField extends StatefulWidget {
   const InputField({super.key});
@@ -313,6 +315,30 @@ class _InputFieldState extends State<InputField> {
                       isPrefix: true,
                       prefixSaxIcon: IconsaxPlusLinear.finger_scan,
                     ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                  child: BelugaDropDown(
+                    hintText: 'Phone Number',
+                    isObscure: false,
+                    isSuffix: false,
+                    textInputType: TextInputType.phone,
+                    maxLines: 1,
+                    readOnly: false,
+                    isEnabled: true,
+                    focus: true,
+                    isPrefix: true,
+                    isButtonPrefix: true,
+                    useCountryCodePicker: true,
+                    countryCode: 'US',
+                    onCountryCodeChanged: (CountryCode code) {
+                      print('Selected country: ${code.name}');
+                      print('Selected dial code: ${code.dialCode}');
+                    },
+                    onChanged: (value) {
+                      print('Phone number: $value');
+                    },
                   ),
                 ),
                 ElevatedButton(
