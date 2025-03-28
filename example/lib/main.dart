@@ -4,6 +4,7 @@ import 'package:example/checkboxes.dart';
 import 'package:example/inputs.dart';
 import 'package:example/radio_buttons.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +21,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: BelugaDesignHome(),
+    return const ScreenUtilInit(
+      minTextAdapt: true,
+      designSize: Size(390, 812),
+      child: MaterialApp(
+        home: BelugaDesignHome(),
+      ),
     );
   }
 }
