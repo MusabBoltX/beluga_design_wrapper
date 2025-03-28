@@ -120,11 +120,11 @@ class _BelugaDropDownState extends State<BelugaDropDown> {
               padding: const EdgeInsets.only(left: 8.0),
               child: SizedBox(
                 height: 40,
-                width: 120, // Fixed width for the country picker
+                width: 120,
                 child: CountryCodePicker(
                   onChanged: widget.onCountryCodeChanged,
-                  initialSelection: widget.countryCode ?? 'US',
-                  favorite: const ['US', 'GB', 'CN'],
+                  initialSelection: 'PK',
+                  // favorite: const ['PK'],
                   showCountryOnly: false,
                   showOnlyCountryWhenClosed: false,
                   alignLeft: true,
@@ -144,6 +144,14 @@ class _BelugaDropDownState extends State<BelugaDropDown> {
                     color: Colors.transparent,
                   ),
                   dialogSize: Size(320.w, 400.h),
+                  searchDecoration: const InputDecoration(
+                    hintText: 'Search country',
+                    prefixIcon: Icon(Icons.search),
+                  ),
+                  dialogTextStyle: TextStyle(
+                    fontSize: 14.sp,
+                    color: AppColors.textPrimary,
+                  ),
                 ),
               ),
             ),
