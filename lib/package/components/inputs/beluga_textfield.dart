@@ -141,7 +141,7 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
                       : focused
                           ? [
                               BoxShadow(
-                                color: AppColors.purple400.withOpacity(0.3),
+                                color: AppColors.purple400.withOpacity(0.2),
                                 blurRadius: 0,
                                 spreadRadius: 2,
                                 offset: const Offset(0, 0),
@@ -175,7 +175,7 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
             controller: widget.controller,
             autovalidateMode: AutovalidateMode.onUserInteraction,
             textAlign: TextAlign.start,
-            cursorColor: AppColors.purple900,
+            cursorColor: AppColors.purple900, // Black cursor
             style: TextStyle(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w400,
@@ -196,7 +196,8 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
                                     padding:
                                         EdgeInsets.only(left: 3, bottom: 3),
                                     child: Icon(IconsaxPlusLinear.arrow_down,
-                                        size: 22, color: AppColors.purple400),
+                                        size: 22,
+                                        color: AppColors.purple400), // Charcoal
                                   ),
                                   value: widget.dropdownValue,
                                   onChanged: widget.onDropdownChanged,
@@ -215,13 +216,13 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
                               IconsaxPlusLinear.user,
                               size: 24,
                               color: widget.isEnabled!
-                                  ? AppColors.purple400
+                                  ? AppColors.purple400 // Charcoal
                                   : AppColors.gray400,
                             )
                           : Icon(
                               widget.prefixSaxIcon,
                               color: widget.isEnabled!
-                                  ? AppColors.purple400
+                                  ? AppColors.purple400 // Charcoal
                                   : AppColors.gray400,
                             )))
                   : null,
@@ -235,7 +236,8 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
                                   icon: const Padding(
                                     padding: EdgeInsets.only(left: 2.0),
                                     child: Icon(IconsaxPlusLinear.arrow_down,
-                                        size: 22, color: AppColors.purple400),
+                                        size: 22,
+                                        color: AppColors.purple400), // Charcoal
                                   ),
                                   value: widget.dropdownValue,
                                   onChanged: widget.onDropdownChanged,
@@ -262,7 +264,7 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
                               ? Icon(
                                   widget.suffixSaxIcon!,
                                   color: widget.isEnabled!
-                                      ? AppColors.purple400
+                                      ? AppColors.purple400 // Charcoal
                                       : AppColors.gray400,
                                 )
                               : Icon(
@@ -270,7 +272,7 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
                                       ? IconsaxPlusLinear.eye_slash
                                       : IconsaxPlusLinear.eye,
                                   color: widget.isEnabled!
-                                      ? AppColors.purple400
+                                      ? AppColors.purple400 // Charcoal
                                       : AppColors.gray400,
                                 ),
                         ))
@@ -286,8 +288,9 @@ class _BelugaTextFieldState extends State<BelugaTextField> {
               ),
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                    color:
-                        widget.focus ? AppColors.purple400 : AppColors.gray400),
+                    color: widget.focus
+                        ? AppColors.purple400
+                        : AppColors.gray400), // Charcoal when focused
                 borderRadius: BorderRadius.circular(10),
               ),
               disabledBorder: OutlineInputBorder(

@@ -22,7 +22,7 @@ class BelugaCheckbox extends StatelessWidget {
     this.unselectedBorderColor = const Color(0xffD0D5DD),
     this.backgroundColor = Colors.white,
     this.showOuterGlow = false,
-    this.shadeColor = const Color(0xFFE2CFFF), // Light purple shade
+    this.shadeColor = const Color(0xFFD4D8DE), // Light charcoal shade
     this.isDisabled = false,
     this.size = 16,
   });

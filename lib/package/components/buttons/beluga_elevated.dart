@@ -149,13 +149,13 @@ class BelugaElevated extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: resolvedRadius,
         gradient: const LinearGradient(
-          colors: [Color(0xFF8862F2), Color(0xFF7544FC), Color(0xFF5B2ED4)],
+          colors: [Color(0xFF474B57), Color(0xFF2C333E), Color(0xFF181B20)],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
         boxShadow: const [
           BoxShadow(
-            color: Color(0xFF6938EF),
+            color: Color(0xFF101214),
             spreadRadius: 1,
             blurRadius: 0,
             offset: Offset(0, 0),
@@ -211,7 +211,7 @@ class GradientBorderPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final Paint paint = Paint()
       ..shader = const LinearGradient(
-        colors: [Color(0xFFA787FF), Color(0xFF4F1ED8)],
+        colors: [Color(0xFF686E7B), Color(0xFF22272F)],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       ).createShader(Rect.fromLTWH(0, 0, size.width, size.height))
