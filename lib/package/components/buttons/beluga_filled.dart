@@ -33,7 +33,7 @@ class BelugaFilled extends StatelessWidget {
     super.key,
     this.text = "Button",
     this.onPressed,
-    this.backgroundColor = Colors.blue,
+    this.backgroundColor = const Color(0xFF101214),
     this.textColor = Colors.white,
     this.fontSize = 16.0,
     this.borderRadius = 8.0,
