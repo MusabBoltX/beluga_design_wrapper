@@ -9,7 +9,7 @@ class AppColors {
   static const Color gray300 = Color(0xffD0D5DD);
   static const Color gray400 = Color(0xFF98A2B3);
   static const Color gray500 = Color(0xFF646464);
-  static const Color gray600 = Color(0xFF575757);
+  static const Color gray600 = Color(0xFF475467);
   static const Color gray700 = Color(0xFF323232);
   static const Color gray800 = Color(0xFF1E1E1E);
   static const Color gray900 = Color(0xFF0E0E0E);
@@ -27,7 +27,6 @@ class AppColors {
   static const Color purple800 = Color(0xFF271484);
   static const Color purple900 = Color(0xFF170C66);
   static const Color radiocolor = Color(0xFF7A5AF8);
-  
 
   // Success (Green)
   static const Color success25 = Color(0xFFEDFDF2);
@@ -71,4 +70,5 @@ class AppColors {
   // Base Colors
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF1E1E1E);
+  static const Color textPrimary = Color(0xFF101828);
 }

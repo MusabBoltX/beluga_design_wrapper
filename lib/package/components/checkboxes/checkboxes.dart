@@ -1,4 +1,5 @@
 import 'package:beluga_design_flutter/beluga_design.dart';
+import 'package:beluga_design_flutter/package/utils/colors.dart';
 
 class BelugaCheckbox extends StatelessWidget {
   final bool value;
