@@ -158,7 +158,7 @@ class BelugaElevated extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             color: shadowColor ?? Color(0xFF101214),
             spreadRadius: 1,
