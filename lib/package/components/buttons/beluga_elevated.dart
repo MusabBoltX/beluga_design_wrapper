@@ -116,6 +116,8 @@ import 'package:flutter_svg/svg.dart';
 
 class BelugaElevated extends StatelessWidget {
   final String text;
+  final List<Color>? colors;
+  final Color? shadowColor;
   final TextStyle? textStyle;
   final VoidCallback onPressed;
   final BorderRadiusGeometry? borderRadius;
@@ -131,6 +133,8 @@ class BelugaElevated extends StatelessWidget {
     required this.onPressed,
     this.borderRadius,
     this.svgPath = '',
+    this.colors,
+    this.shadowColor,
     this.child,
     this.svgheight,
     this.svgwidth,
@@ -148,14 +152,15 @@ class BelugaElevated extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: resolvedRadius,
-        gradient: const LinearGradient(
-          colors: [Color(0xFF474B57), Color(0xFF2C333E), Color(0xFF181B20)],
+        gradient: LinearGradient(
+          colors: colors ??
+              [Color(0xFF474B57), Color(0xFF2C333E), Color(0xFF181B20)],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
         boxShadow: const [
           BoxShadow(
-            color: Color(0xFF101214),
+            color: shadowColor ?? Color(0xFF101214),
             spreadRadius: 1,
             blurRadius: 0,
             offset: Offset(0, 0),
