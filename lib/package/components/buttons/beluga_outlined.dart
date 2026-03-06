@@ -18,7 +18,6 @@ class BelugaOutlined extends StatelessWidget {
   final ButtonStyle? style;
   final bool autofocus;
   final TextStyle? textStyle;
-  final SocialIcons? socialIcon; // Enum se image ya icon set hoga
 
   const BelugaOutlined({
     super.key,
@@ -38,7 +37,6 @@ class BelugaOutlined extends StatelessWidget {
     this.style,
     this.autofocus = false,
     this.textStyle,
-    this.socialIcon, // SVG image ke liye
   });
 
   @override
@@ -60,11 +58,7 @@ class BelugaOutlined extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (socialIcon != null) ...[
-            // Agar socialIcon diya ho
-            SvgPicture.asset(socialIcon!.path, width: 20, height: 20),
-            const SizedBox(width: 8),
-          ] else if (icon != null) ...[
+          if (icon != null) ...[
             // Agar sirf normal icon diya ho
             Icon(icon, color: textColor, size: iconSize),
             const SizedBox(width: 8),
@@ -82,13 +76,4 @@ class BelugaOutlined extends StatelessWidget {
       ),
     );
   }
-}
-
-enum SocialIcons {
-  google("assets/image/social.svg"),
-  facebook("assets/image/lightfb.svg"),
-  apple("assets/image/apple.svg");
-
-  final String path;
-  const SocialIcons(this.path);
 }
